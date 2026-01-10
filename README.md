@@ -1,41 +1,6 @@
-# CS Finanzberatung - Static Website
+# CS Finanzberatung - Website
 
-This repository contains the personal homepage for CS Finanzberatung - Corinne Walser-Schwarzentruber.
-
-## Live Website
-
-The website is a static HTML5/CSS3 site and can be deployed directly to GitHub Pages.
-
-## Local Development
-
-To view the website locally:
-
-1. Open `index.html` in your web browser
-2. Or use a simple HTTP server:
-   ```bash
-   python3 -m http.server 8000
-   # or
-   npx serve
-   ```
-
-## GitHub Pages Deployment
-
-### Method 1: Automated with GitHub Actions
-
-1. Go to your repository Settings
-2. Navigate to "Pages" section
-3. Under "Source", select "GitHub Actions"
-4. The workflow file `.github/workflows/deploy.yml` will automatically deploy on push to main
-
-### Method 2: Manual Deployment
-
-1. Go to your repository Settings
-2. Navigate to "Pages" section
-3. Under "Source", select "Deploy from a branch"
-4. Select "main" branch and "/ (root)" folder
-5. Click "Save"
-
-Your site will be available at: `https://[username].github.io/cs-finanzberatung`
+This repository contains the homepage for CS Finanzberatung - Corinne Walser-Schwarzentruber.
 
 ## Features
 
@@ -66,4 +31,16 @@ This is now a simple static website. To update content:
 
 1. Edit `index.html` directly
 2. Commit and push changes
-3. GitHub Pages will automatically update (if using automated deployment)
+3. GitHub Pages will automatically update (automated in workflow file `.github/workflows/deploy.yml`)
+
+## Local Development
+
+To view the website locally:
+
+1. Open `index.html` in your web browser
+2. Or use a simple HTTP server:
+   ```bash
+   python3 -m http.server 8000
+   # or
+   npx serve
+   ```
