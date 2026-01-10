@@ -1,73 +1,69 @@
-# Welcome to your Lovable project
+# CS Finanzberatung - Static Website
 
-## Project info
+This repository contains the personal homepage for CS Finanzberatung - Corinne Walser-Schwarzentruber.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Live Website
 
-## How can I edit this code?
+The website is a static HTML5/CSS3 site and can be deployed directly to GitHub Pages.
 
-There are several ways of editing your application.
+## Local Development
 
-**Use Lovable**
+To view the website locally:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+1. Open `index.html` in your web browser
+2. Or use a simple HTTP server:
+   ```bash
+   python3 -m http.server 8000
+   # or
+   npx serve
+   ```
 
-Changes made via Lovable will be committed automatically to this repo.
+## GitHub Pages Deployment
 
-**Use your preferred IDE**
+### Method 1: Automated with GitHub Actions
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+1. Go to your repository Settings
+2. Navigate to "Pages" section
+3. Under "Source", select "GitHub Actions"
+4. The workflow file `.github/workflows/deploy.yml` will automatically deploy on push to main
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Method 2: Manual Deployment
 
-Follow these steps:
+1. Go to your repository Settings
+2. Navigate to "Pages" section
+3. Under "Source", select "Deploy from a branch"
+4. Select "main" branch and "/ (root)" folder
+5. Click "Save"
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Your site will be available at: `https://[username].github.io/cs-finanzberatung`
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Features
 
-# Step 3: Install the necessary dependencies.
-npm i
+- ✅ Fully static HTML5/CSS3 website
+- ✅ Responsive design for mobile and desktop
+- ✅ Uses Tailwind CSS via CDN (no build step required)
+- ✅ Clean JavaScript for navigation
+- ✅ Fast loading times
+- ✅ No dependencies or build tools needed
+- ✅ Ready for GitHub Pages deployment
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## Technologies
 
-**Edit a file directly in GitHub**
+- HTML5
+- CSS3 (with Tailwind CSS via CDN)
+- Vanilla JavaScript
+- Google Fonts
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Structure
 
-**Use GitHub Codespaces**
+- `index.html` - Main website file (contains all content and functionality)
+- `public/images/` - Image assets
+- `public/robots.txt` - SEO configuration
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Maintenance
 
-## What technologies are used for this project?
+This is now a simple static website. To update content:
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+1. Edit `index.html` directly
+2. Commit and push changes
+3. GitHub Pages will automatically update (if using automated deployment)
